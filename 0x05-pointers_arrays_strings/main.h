@@ -8,89 +8,87 @@
 
 int _putchar(char c);
 
-/**
- * _isupper - checks for uppercase character
- * @c: character to be checked
- * Return: 1 if true, 0 if false
- */
-
-int _isupper(int c);
 
 /**
- * _isdigit - checks for a digit 0 through 9
- * @c: digit to be checked
- * Return: 1 if true, 0 if false
+ * reset_to_98 - takes a pointer to an int as parameter and updates the value it points to to 98
+ * @n: pointer to int n
  */
 
-int _isdigit(int c);
+void reset_to_98(int *n);
 
 /**
- * mul - multiplies two integers
- * @a: one integer
- * @b: second integer
- * Return: product of a and b
+ * swap_int - swaps the values of two integers
+ * @a: integer to swap
+ * @b: integer to swap
  */
 
-int mul(int a, int b);
+void swap_int(int *a, int *b);
 
 /**
- * print_numbers - print 0 to 9
+ * main - returns the length of a string
+ * @s: string
  */
 
-void print_numbers(void);
+int _strlen(char *s);
 
 /**
- * print_most_numbers - print 0 to 9, skip 2 and 4
+ * _puts - prints a string, followed by a new line, to stdout
+ * @str: string to print
  */
 
-void print_most_numbers(void);
+void _puts(char *str);
 
 /**
- * more_numbers - print 0 to 14 ten times
+ * print_rev - prints a string, in reverse, followed by a new line
+ * @s: string to reverse
  */
 
-void more_numbers(void);
+void print_rev(char *s);
 
 /**
- * print_line(int n) - print the character "_" n times to draw a line
- * @n: number of characters to draw
+ * print_rev - reverses a string
+ * @s: string to reverse
  */
 
-void print_line(int n);
+void rev_string(char *s);
 
 /**
- * print_diagonal - print character "\" n times
- * @n: number of characters to draw
+ * puts2 - prints every second character of a string, followed by a new line
+ * @str: string to print
  */
 
-void print_diagonal(int n);
+void puts2(char *str);
 
 /**
- * print_square - print a square of given size
- * @size: size to draw
+ * puts_half - prints half of a string, followed by a new line
+ * @str: string to print
  */
 
-void print_square(int size);
+void puts_half(char *str);
 
 /**
- * print_triangle - print traingle with #'s with given size
- * @size: size of triangle to draw
+ * print_array - prints n elements of an array of integers, followed by a new line
+ * @a: array
+ * @n: number of elements
  */
 
-void print_triangle(int size);
+void print_array(int *a, int n);
 
 /**
- * print_triangle - print traingle with #'s with given size
- * @size: size of triangle to draw
+ * _strcpy - copies the string pointed to by src, including the terminating null byte (\0),
+ * to the buffer pointed to by dest
+ * @dest: copy source to this buffer
+ * @src: this is the source to copy
  */
 
-void print_triangle(int size);
+char *_strcpy(char *dest, char *src);
 
 /**
- * print_number = print an integer, without using long, arrays, or pointers
- * @n: number to be printed
+ * _atoi - convert string to int
+ * @s: string to convert
+ * Return: integer
  */
 
-void print_number(int n);
+int _atoi(char *s);
 
 #endif

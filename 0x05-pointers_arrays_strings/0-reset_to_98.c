@@ -1,15 +1,12 @@
 #include "main.h"
 
 /**
- * _isupper - checks for uppercase character
- * @c: character to be checked
- * Return: 1 if true, 0 if false
+ * reset_to_98 - takes a pointer to an int as parameter
+ * and updates the value it points to to 98
+ * @n: pointer to int n
  */
 
-int _isupper(int c)
+void reset_to_98(int *n)
 {
-	if ((c >= 'A') && (c <= 'Z'))
-		return (1);
-	else
-		return (0);
+	*n = 98;
 }
